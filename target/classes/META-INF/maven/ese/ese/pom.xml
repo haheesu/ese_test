@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>ese</groupId>
+	<artifactId>ese</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<repositories>
+		<repository>
+			<id>public</id>
+			<name>Dev Public</name>
+			<url>http://210.97.42.246:10053/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>central</id>
+			<name>central</name>
+			<url>http://210.97.42.246:10053/nexus/content/repositories/central/</url>
+		</repository>
+		<repository>
+			<id>in-project</id>
+			<name>In Project Repo</name>
+			<url>file://${project.basedir}/repo</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.eseict.iot</groupId>
+			<artifactId>iotsdk</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<scope>compile</scope>
+			<version>1.7.25</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.eseict</groupId>
+			<artifactId>common-utils</artifactId>
+			<version>2.4.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.eseict</groupId>
+			<artifactId>common</artifactId>
+			<version>2.3.10-SNAPSHOT_jdk1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+	
+
+	</dependencies>
+</project>
