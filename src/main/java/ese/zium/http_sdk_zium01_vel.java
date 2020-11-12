@@ -1,4 +1,4 @@
-package ese;
+package ese.zium;
 
 import java.util.Random;
 

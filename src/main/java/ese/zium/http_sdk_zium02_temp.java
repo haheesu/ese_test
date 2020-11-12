@@ -1,4 +1,4 @@
-package ese;
+package ese.zium;
 
 import java.util.Random;
 
@@ -8,15 +8,15 @@ import com.eseict.iot.common.config.CommonCode;
 import com.eseict.iot.domain.object.ResponsePrimitive;
 import com.eseict.iot.domain.resource.dataType.resourceType.ContentInstance;
 
-public class http_sdk_zium03_humi {
+public class http_sdk_zium02_temp {
 
 	//클라이언트 모드 + http로 sdk설정, create api 호출
 
 	private static String HOST_IP = "210.97.42.250";
 	private static int HOST_PORT = 11710;
 	private static String FROM = "SiotTestAE";
-	private static String ENDPOINT_URI = "/iotCore/AE3595d437-45ea-4948-aecb-d69902549f3a";
-	private static String STREAM = "hum";
+	private static String ENDPOINT_URI = "/iotCore/AEf70d8af9-1b06-4d28-9f0e-bb4d28f73127";
+	private static String STREAM = "temp";
 	private static String SENSOR_DATA;
 
 	public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class http_sdk_zium03_humi {
 		while (true) {
 			
 			Random ran = new Random();
-			double sensor_data = (ran.nextGaussian() + 52);
+			double sensor_data = (ran.nextGaussian() + 20);
 			SENSOR_DATA = Double.toString(sensor_data);
 			
 			
